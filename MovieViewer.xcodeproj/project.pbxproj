@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83180A291C5715AE0069FE97 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83180A281C5715AE0069FE97 /* MovieCell.swift */; };
 		8354B7BD1C55E41F006B7C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8354B7BC1C55E41F006B7C42 /* AppDelegate.swift */; };
-		8354B7BF1C55E41F006B7C42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8354B7BE1C55E41F006B7C42 /* ViewController.swift */; };
 		8354B7C21C55E41F006B7C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8354B7C01C55E41F006B7C42 /* Main.storyboard */; };
 		8354B7C41C55E41F006B7C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8354B7C31C55E41F006B7C42 /* Assets.xcassets */; };
 		8354B7C71C55E41F006B7C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8354B7C51C55E41F006B7C42 /* LaunchScreen.storyboard */; };
+		8354B7CF1C55E4F8006B7C42 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8354B7CE1C55E4F8006B7C42 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83180A281C5715AE0069FE97 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		8354B7B91C55E41F006B7C42 /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8354B7BC1C55E41F006B7C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8354B7BE1C55E41F006B7C42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8354B7C11C55E41F006B7C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8354B7C31C55E41F006B7C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8354B7C61C55E41F006B7C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8354B7C81C55E41F006B7C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8354B7CE1C55E4F8006B7C42 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83180A271C5715440069FE97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83180A281C5715AE0069FE97 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		83180A2A1C5715B70069FE97 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8354B7CE1C55E4F8006B7C42 /* MoviesViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
 		8354B7B01C55E41F006B7C42 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +72,9 @@
 		8354B7BB1C55E41F006B7C42 /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				83180A2A1C5715B70069FE97 /* View Controller */,
+				83180A271C5715440069FE97 /* Views */,
 				8354B7BC1C55E41F006B7C42 /* AppDelegate.swift */,
-				8354B7BE1C55E41F006B7C42 /* ViewController.swift */,
 				8354B7C01C55E41F006B7C42 /* Main.storyboard */,
 				8354B7C31C55E41F006B7C42 /* Assets.xcassets */,
 				8354B7C51C55E41F006B7C42 /* LaunchScreen.storyboard */,
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8354B7BF1C55E41F006B7C42 /* ViewController.swift in Sources */,
 				8354B7BD1C55E41F006B7C42 /* AppDelegate.swift in Sources */,
+				8354B7CF1C55E4F8006B7C42 /* MoviesViewController.swift in Sources */,
+				83180A291C5715AE0069FE97 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +304,7 @@
 				8354B7CD1C55E41F006B7C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
